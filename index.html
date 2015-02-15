@@ -43,16 +43,16 @@
 				//directing console to look into the favoriteSinger list
 
 				if(item.type == "pop"){
-					favPopSingers.push(item);
+					favPopSingers.push(item);//pushing pop singers to FavPopSingers bucket
 				}else{
 					
-					nonPopSingers.push(item)
+					nonPopSingers.push(item)//if its type is not pop, push the name to nonPopSingers bucket
 				}
 
 			}//end of the loop
 			
-			console.log (favPopSingers);
-			console.log (nonPopSingers);
+			console.log (favPopSingers);//logging to see if all pop artists (Jay Chou and Taylor Swift) are in the same bucket
+			console.log (nonPopSingers);//logging to see if all non-pop artisits are in the same bucket
 
 		</script>
 
