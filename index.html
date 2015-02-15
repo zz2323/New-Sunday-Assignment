@@ -51,22 +51,15 @@
 				type : "pop"
 			}];
 
-			/* Console logging all items in the list.
-			 *
-			 */
-
 			/*
 			 * Creating a funcion to sort favorite pop artists
-			 * 
-			 * 
-			 * 
 			 * 
 			 */
 
 function sortFavoritePopArtists(artistLists){
 
-			var favPopSingers = []
-			var nonPopSingers = []
+			var favPopSingers = [];
+			var nonPopSingers = [];
 			
 			for (var i = 0; i < 5; i++)//the looping mechanics. starting at index 0, ending before index 5. increment i by 1 each time
 			{
@@ -82,15 +75,21 @@ function sortFavoritePopArtists(artistLists){
 
 			}//end of the loop
 			
-			return (favPopSingers);//returning favPopSingers 
+			return (favPopSingers);//an arry for returning favPopSingers
 
 			
 			}//end of the sortFavoriteArtists function
 			
-			var myFirstFavPopSingers = sortFavoritePopArtists(favoriteSingers);
-			console.log (myFirstFavPopSingers)
-			var mySecondFavPopSingers = sortFavoritePopArtists(favoriteSinger_2);
-			console.log (mySecondFavPopSingers)
+			/*
+			 * I expect first list to have Jay Chou and Taylor Swift
+			 * Second list to have Beyonce and Maroon 5
+			 * And I got them working. Yay. 
+			 */
+			
+			var myFirstFavPopSingers = sortFavoritePopArtists(favoriteSingers);//sort and find all pop singers in the first list
+			console.log (myFirstFavPopSingers)//showing the pop singers from the first list
+			var mySecondFavPopSingers = sortFavoritePopArtists(favoriteSinger_2);//sort and find all pop singers in the second list
+			console.log (mySecondFavPopSingers)//showing the pop singers from the second list
 
 		</script>
 
