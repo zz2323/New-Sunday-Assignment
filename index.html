@@ -36,18 +36,20 @@
 
 			/*
 			 * Creating a funcion to sort favorite pop artists
+			 * 
+			 * 
+			 * 
+			 * 
 			 */
 
-
-
-function sortFavoritePopArtists(PopArtists){
+function sortFavoritePopArtists(artistLists){
 
 			var favPopSingers = []
 			var nonPopSingers = []
 			
 			for (var i = 0; i < 5; i++)//the looping mechanics. starting at index 0, ending before index 5. increment i by 1 each time
 			{
-				var item = favoriteSingers[i];
+				var item = artistLists[i];
 				//directing console to look into the favoriteSinger list
 
 				if(item.type == "pop"){
