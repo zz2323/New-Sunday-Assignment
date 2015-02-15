@@ -37,14 +37,13 @@
 			var favPopSingers = []
 			var nonPopSingers = []
 			
-			for (var i = 0; i < 6; i++)//the looping mechanics. starting at index 0, ending before index 6. increment i by 1 each time
+			for (var i = 0; i < 5; i++)//the looping mechanics. starting at index 0, ending before index 5. increment i by 1 each time
 			{
 				var item = favoriteSingers[i];
 				//directing console to look into the favoriteSinger list
-				console.log(i);
 
-				if (item.type == "pop") {
-					favPopSingers.push(item);//this console log only happens if the item type is pop. It will push the pop singers into the favPopSingers list
+				if(item.type == "pop"){
+					favPopSingers.push(item);
 				}else{
 					
 					nonPopSingers.push(item)
@@ -52,8 +51,8 @@
 
 			}//end of the loop
 			
-			console.log (favPopSingers)
-			console.log (nonPopSingers)
+			console.log (favPopSingers);
+			console.log (nonPopSingers);
 
 		</script>
 
