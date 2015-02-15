@@ -7,15 +7,13 @@
 	</head>
 	<body>
 		<h1>Starting from the scratch. No more BS from Github</h1>
-		
-		
-	<script>
-		/*
-		 * The first list of my favorite singers
-		 */
-		
-		
-		var favoriteSingers = [{
+
+		<script>
+			/*
+			 * The first list of my favorite singers
+			 */
+
+			var favoriteSingers = [{
 				name : "JayZ",
 				type : "R&B"
 			}, {
@@ -28,32 +26,27 @@
 				name : "Eminiem",
 				type : "rap"
 			}, {
-				name : "Taylor Swift", 
+				name : "Taylor Swift",
 				type : "pop"
 			}];
-			
-			
-			
-			/* Console logging all items in the list.
-			 * 
-			 */
-			for(var i=0; i < 6; i++)//the looping mechanics. starting at index 0, ending before index 6. increment i by 1 each time
-			{
-				var item = favoriteSingers[i];//directing console to look into the favoriteSinger list
-				console.log (i);
-				console.log(item);
-				
-				}//end of the loop
 
-		
-	</script>
-		
-		
-		
-		
-		
-		
-		
+			/* Console logging all items in the list.
+			 *
+			 */
+			for (var i = 0; i < 6; i++)//the looping mechanics. starting at index 0, ending before index 6. increment i by 1 each time
+			{
+				var item = favoriteSingers[i];
+				//directing console to look into the favoriteSinger list
+				console.log(i);
+
+				if (item.type == "pop") {
+					console.log(item);//this console log only happens if the item type is pop
+				}//end of if statement
+
+			}//end of the loop
+
+		</script>
+
 	</body>
 </html>
 
